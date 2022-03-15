@@ -547,6 +547,56 @@ p {
   fill: var(--text-white-color);
 }
 
+.submit {
+  margin-left: 93px;
+}
+
+.form-title {
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--main-bcg-color);
+}
+form {
+  margin-top: 20px;
+  display: flex;
+}
+
+input[type='email'] {
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 15px;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  color: var(--text-white-color);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--text-white-color);
+  background-color: var(--main-theme-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.icon-plane {
+  margin-left: 10px;
+}
+
 /* Модальное окно */
 .modal {
   position: fixed;
