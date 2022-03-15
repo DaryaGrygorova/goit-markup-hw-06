@@ -434,11 +434,36 @@
     <!-- Модальное окно -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-box">
-        <button class="modal-button button" data-modal-close>
+        <button class="modal-close-button button" data-modal-close>
           <svg class="icon-vector" width="11" height="11">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
+        <div class="modal-form-wrapper">
+          <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <form class="modal-form" autocomplete="off">
+            <ul class="list"  role="group" aria-labelledby="contact-details-head">
+              <li><label class="modal-form-label" for="name">Имя</label>
+                <input type="text" id="name"  /></li>
+              <li><label class="modal-form-label" for="tel">Телефон</label>
+                <input type="tel" id="tel"/></li>
+              <li><label class="modal-form-label" for="email">Почта</label>
+                  <input type="email" id="email"/></li>
+              <li><label class="modal-form-label">Комментарий
+                    <textarea name="comment" rows="5"></textarea></label></li>
+            </ul>
+            <label class="policy-checkbox">
+              <input type="checkbox" name="policy"/>
+              Соглашаюсь с рассылкой и принимаю 
+              <a class="policy-link link" href="" >Условия договора</a>
+            </label>
+            <div class="send-button-wrapper">
+              <button class="modal-send-button button">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
