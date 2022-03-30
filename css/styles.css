@@ -485,6 +485,10 @@ p {
   align-items: baseline;
 }
 
+.footer-contact-wrap {
+  flex-grow: 1;
+}
+
 .address {
   font-style: normal;
   letter-spacing: 0.03em;
@@ -677,7 +681,7 @@ p {
 }
 
 .modal-form-title {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -686,10 +690,17 @@ p {
   color: #212121;
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
 .form-field-input {
   position: relative;
-  margin-top: 4px;
-  margin-bottom: 10px;
 }
 
 .form-field input {
@@ -713,10 +724,10 @@ p {
 }
 
 .modal-form textarea[name='comment'] {
+  display: block;
   width: 100%;
   min-height: 120px;
   resize: none;
-  margin-top: 4px;
   padding: 12px;
   font-size: 14px;
   line-height: 1.14;
@@ -734,6 +745,10 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-field.comment {
+  margin-bottom: 0;
+}
+
 .form-field:focus-within input,
 .form-field:focus-within textarea {
   border: 1px solid var(--main-theme-color);
@@ -744,22 +759,14 @@ p {
 }
 
 .policy-checkbox-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
-  padding-left: 20px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .modal-checkbox-icon {
-  position: absolute;
-  top: 50%;
-  left: 13px;
-  transform: translateY(-65%);
+  margin-right: 4px;
   width: 15px;
   height: 15px;
   border: 2px solid var(--secondary-text-color);
@@ -786,11 +793,12 @@ p {
 
 .policy-checkbox-wrapper label {
   display: flex;
-  text-align: center;
-  margin-right: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .policy-link {
+  margin-left: 4px;
   text-decoration: underline;
   color: var(--main-theme-color);
 }
